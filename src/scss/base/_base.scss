@@ -1,0 +1,13 @@
+@use '../utils/variables' as v;
+
+body {
+    font-family: v.$montserrat;
+    font-weight: map-get(v.$font-weights, medium);
+    font-size: map-get(v.$font-sizes, fs-500);
+    color: v.$body-text-clr;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

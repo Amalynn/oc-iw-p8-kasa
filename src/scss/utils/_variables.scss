@@ -1,0 +1,38 @@
+// Design System
+
+// Colors
+$colors: (
+    'black-clr': #000,
+    'white-clr': #fff,
+    'light-red': #ff6060,
+    'very-light-gray-mostly-white': #f6f6f6,
+    'very-light-gray': #e3e3e3,
+);
+
+$footer-bg-clr: map-get($colors, black-clr);
+$footer-text-clr: map-get($colors, white-clr);
+$body-text-clr: map-get($colors, black-clr);
+
+// Breakpoints
+$breakpoints-up: (
+    'tablet': 768px,
+    'desktop': 1024px,
+);
+
+//Fonts
+$montserrat: 'Montserrat', sans-serif;
+
+$font-weights: (
+    'light': 300,
+    'regular': 400,
+    'medium': 500,
+    'bold': 700,
+);
+
+$font-sizes: (
+    'fs-300': 12px,
+    'fs-400': 14px,
+    'fs-500': 18px,
+    'fs-800': 24px,
+    'fs-900': 48px,
+);
