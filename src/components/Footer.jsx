@@ -1,3 +1,10 @@
+import logo from '../assets/logo/logo-white.svg';
+
 export default function Footer() {
-    return <h1>Ceci est le footer</h1>;
+    return (
+        <footer className="footer">
+            <img src={logo} alt="Logo de Kasa" />
+            <p>© 2020 Kasa. All rights reserved</p>
+        </footer>
+    );
 }

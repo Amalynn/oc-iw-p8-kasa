@@ -2,7 +2,7 @@
 
 // Media queries
 @mixin media-breakpoint-up($breakpoint) {
-    @media only screen and (min-width: map.get(var.$breakpoints-up, $breakpoint)) {
+    @media only screen and (min-width: map-get(var.$breakpoints-up, $breakpoint)) {
         @content;
     }
 }
