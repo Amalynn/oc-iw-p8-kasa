@@ -147,4 +147,66 @@ a {
   }
 }
 
+.error404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 115px;
+  height: 400px;
+  text-align: center;
+  color: #ff6060;
+}
+@media only screen and (min-width: 1024px) {
+  .error404 {
+    height: 610px;
+    margin-bottom: 139px;
+    margin-top: 0;
+  }
+}
+.error404 h1 {
+  font-size: 96px;
+}
+@media only screen and (min-width: 768px) {
+  .error404 h1 {
+    font-size: 150px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .error404 h1 {
+    font-size: 288px;
+  }
+}
+.error404 p {
+  font-size: 18px;
+  width: 260px;
+}
+@media only screen and (min-width: 768px) {
+  .error404 p {
+    font-size: 24px;
+    width: fit-content;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .error404 p {
+    font-size: 36px;
+  }
+}
+.error404 a {
+  color: #000;
+  font-size: 14px;
+  border-bottom: 1px solid #000;
+}
+@media only screen and (min-width: 768px) {
+  .error404 a {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .error404 a {
+    font-size: 18px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
