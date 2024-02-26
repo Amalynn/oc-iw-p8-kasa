@@ -5,8 +5,8 @@
     max-width: 1240px;
     padding: 0 20px;
     display: flex;
-    justify-content: center;
     margin: auto;
+    flex-direction: column;
 
     @include m.media-breakpoint-up(tablet) {
         padding: 0 50px;
