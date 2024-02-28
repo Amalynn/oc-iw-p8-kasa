@@ -13,6 +13,8 @@ $footer-bg-clr: map-get($colors, black-clr);
 $footer-text-clr: map-get($colors, white-clr);
 $body-text-clr: map-get($colors, black-clr);
 
+$card-list-bg-clr: map-get($colors, very-light-gray-mostly-white);
+
 // Breakpoints
 $breakpoints-up: (
     'tablet': 768px,
