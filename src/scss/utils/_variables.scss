@@ -15,6 +15,11 @@ $body-text-clr: map-get($colors, black-clr);
 
 $card-list-bg-clr: map-get($colors, very-light-gray-mostly-white);
 
+$collapse-header-bg-clr: map-get($colors, light-red);
+$collapse-header-text-clr: map-get($colors, white-clr);
+$collapse-body-bg-clr: map-get($colors, very-light-gray-mostly-white);
+$collapse-body-text-clr: map-get($colors, black-clr);
+
 // Breakpoints
 $breakpoints-up: (
     'tablet': 768px,
@@ -33,6 +38,7 @@ $font-weights: (
 
 $font-sizes: (
     'fs-300': 12px,
+    'fs-350': 13px,
     'fs-400': 14px,
     'fs-450': 16px,
     'fs-500': 18px,
