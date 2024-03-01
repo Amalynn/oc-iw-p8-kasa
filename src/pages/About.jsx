@@ -8,8 +8,8 @@ export default function About() {
         <>
             <Banner image={bannerAbout} imageTitle={imageTitle} />
 
-            <div className="collapse-about">
-                <Collapse title="Fiabilité">
+            <div className="about">
+                <Collapse title="Fiabilité" customClassNames="about-collapse">
                     <p>
                         Les annonces postées sur Kasa garantissent une fiabilité
                         totale. Les photos sont conformes aux logements, et
@@ -17,7 +17,7 @@ export default function About() {
                         nos équipes.
                     </p>
                 </Collapse>
-                <Collapse title="Respect">
+                <Collapse title="Respect" customClassNames="about-collapse">
                     <p>
                         La bienveillance fait partie des valeurs fondatrices de
                         Kasa. Tout comportement discriminatoires ou de
@@ -25,7 +25,7 @@ export default function About() {
                         notre plateforme.
                     </p>
                 </Collapse>
-                <Collapse title="Service">
+                <Collapse title="Service" customClassNames="about-collapse">
                     <p>
                         La bienveillance fait partie des valeurs fondatrices de
                         Kasa. Tout comportement discriminatoires ou de
@@ -33,7 +33,7 @@ export default function About() {
                         notre plateforme.
                     </p>
                 </Collapse>
-                <Collapse title="Sécurité">
+                <Collapse title="Sécurité" customClassNames={'about-collapse'}>
                     <p>
                         La sécurité est la priorité de Kasa. Aussi bien pour nos
                         hôtes que pour les voyageurs, chaque logement correspond

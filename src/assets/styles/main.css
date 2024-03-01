@@ -220,29 +220,6 @@ a {
   background-color: #f6f6f6;
   border-radius: 5px;
 }
-@media only screen and (min-width: 768px) {
-  .collapse {
-    width: 82%;
-  }
-}
-.collapse-about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 20px;
-  margin-bottom: 20px;
-}
-@media only screen and (min-width: 768px) {
-  .collapse-about {
-    margin-bottom: 30px;
-    row-gap: 30px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .collapse-about {
-    margin-bottom: 40px;
-  }
-}
 .collapse-header {
   color: #fff;
   background-color: #ff6060;
@@ -423,6 +400,33 @@ a {
 @media only screen and (min-width: 1024px) {
   .error404 a {
     font-size: 18px;
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .about {
+    margin-bottom: 30px;
+    row-gap: 30px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .about {
+    margin-bottom: 40px;
+  }
+}
+.about-collapse {
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .about-collapse {
+    width: 82%;
   }
 }
 

@@ -3,7 +3,7 @@ import { useRef } from 'react';
 import PropTypes from 'prop-types';
 import arrowIcon from '../assets/icons/arrow-icon.svg';
 
-export default function Collapse({ title, children }) {
+export default function Collapse({ title, children, customClassNames }) {
     const ref = useRef(null);
     const [contentHeight, setContentHeight] = useState(0);
     const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +17,7 @@ export default function Collapse({ title, children }) {
     }, [isOpen]);
 
     return (
-        <section className="collapse">
+        <section className={`collapse ${customClassNames}`}>
             <div className="collapse-header">
                 <h2>{title}</h2>
                 <button
@@ -45,4 +45,9 @@ export default function Collapse({ title, children }) {
 Collapse.propTypes = {
     title: PropTypes.string.isRequired,
     children: PropTypes.node.isRequired,
+    customClassNames: PropTypes.string,
+};
+
+Collapse.defaultProps = {
+    customClassNames: '',
 };

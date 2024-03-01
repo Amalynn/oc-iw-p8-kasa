@@ -1,7 +1,25 @@
+import { useParams } from 'react-router-dom';
+import apartments from '../datas/apartments.json';
+import Profile from '../components/Profile.jsx';
+import Collapse from '../components/Collapse.jsx';
+
 export default function ApartmentDetails() {
+    let { id } = useParams();
+
+    let apartmentToDisplay = apartments.find(
+        (apartment) => apartment.id === id,
+    );
+
     return (
-        <h1>
-            Ceci est la page détaillant le description d&apos;un appartement
-        </h1>
+        <>
+            <div className="apartment-description">
+                <Collapse title="Description">
+                    <p>{apartmentToDisplay.description}</p>
+                </Collapse>
+                <Collapse title="Equipements">
+                    <p>{apartmentToDisplay.equipements}</p>
+                </Collapse>
+            </div>
+        </>
     );
 }

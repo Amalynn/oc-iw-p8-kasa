@@ -1,0 +1,28 @@
+@use '../utils/variables' as v;
+@use '../utils/mixins' as m;
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+
+    margin-bottom: 20px;
+
+    @include m.media-breakpoint-up(tablet) {
+        margin-bottom: 30px;
+        row-gap: 30px;
+    }
+
+    @include m.media-breakpoint-up(desktop) {
+        margin-bottom: 40px;
+    }
+
+    &-collapse {
+        width: 100%;
+
+        @include m.media-breakpoint-up(tablet) {
+            width: 82%;
+        }
+    }
+}
