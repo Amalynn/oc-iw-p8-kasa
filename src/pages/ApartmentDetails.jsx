@@ -34,7 +34,7 @@ export default function ApartmentDetails() {
 
                 <div className="apartment-description">
                     <Collapse title="Description">
-                        <p>{apartmentToDisplay.description}</p>
+                        {apartmentToDisplay.description}
                     </Collapse>
 
                     <Collapse title="Equipements">

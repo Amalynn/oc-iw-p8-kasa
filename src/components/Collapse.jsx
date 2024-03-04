@@ -36,7 +36,7 @@ export default function Collapse({ title, children, customClassNames }) {
                 className={`collapse-body ${isOpen ? 'open' : ''}`}
                 style={{ height: `${contentHeight}px` }}
             >
-                {children}
+                <div className="collapse-body-content">{children}</div>
             </div>
         </section>
     );
