@@ -1,0 +1,19 @@
+@use '../utils/mixins' as m;
+
+.rating {
+    display: flex;
+    column-gap: 5px;
+
+    @include m.media-breakpoint-up(desktop) {
+        column-gap: 10px;
+    }
+
+    img {
+        height: 13px;
+        width: auto;
+
+        @include m.media-breakpoint-up(desktop) {
+            height: 24px;
+        }
+    }
+}

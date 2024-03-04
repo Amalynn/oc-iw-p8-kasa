@@ -1,0 +1,32 @@
+@use '../utils/variables' as v;
+@use '../utils/mixins' as m;
+
+.tags {
+    color: map-get(v.$colors, white-clr);
+    margin-top: 12px;
+
+    @include m.media-breakpoint-up(tablet) {
+        margin-top: 20px;
+    }
+
+    ul {
+        row-gap: 4px;
+        column-gap: 10px;
+    }
+
+    li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: map-get(v.$colors, light-red);
+        border-radius: 10px;
+        font-size: map-get(v.$font-sizes, fs-200);
+        font-weight: map-get(v.$font-weights, bold);
+        height: 25px;
+        padding: 0 20px;
+
+        @include m.media-breakpoint-up(tablet) {
+            font-size: map-get(v.$font-sizes, fs-400);
+        }
+    }
+}

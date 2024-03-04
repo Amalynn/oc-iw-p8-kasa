@@ -1,0 +1,15 @@
+.list {
+    &-reset {
+        list-style: none;
+    }
+
+    &-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &-column {
+        display: flex;
+        flex-direction: column;
+    }
+}

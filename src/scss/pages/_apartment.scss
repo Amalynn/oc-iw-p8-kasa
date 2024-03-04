@@ -1,0 +1,97 @@
+@use '../utils/mixins' as m;
+@use '../utils/variables' as v;
+
+.apartment {
+    margin-bottom: 20px;
+    margin-top: 15px;
+
+    @include m.media-breakpoint-up(tablet) {
+        margin-bottom: 35px;
+        margin-top: 23px;
+    }
+
+    @include m.media-breakpoint-up(desktop) {
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+
+    &-header {
+        display: flex;
+        flex-direction: column;
+
+        @include m.media-breakpoint-up(tablet) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        h2 {
+            font-size: map-get(v.$font-sizes, fs-400);
+            font-weight: map-get(v.$font-weights, medium);
+            margin-top: 3px;
+
+            @include m.media-breakpoint-up(tablet) {
+                font-size: map-get(v.$font-sizes, fs-450);
+            }
+
+            @include m.media-breakpoint-up(desktop) {
+                font-size: map-get(v.$font-sizes, fs-500);
+            }
+        }
+    }
+
+    h1 {
+        color: map-get(v.$colors, light-red);
+        font-size: map-get(v.$font-sizes, fs-500);
+        font-weight: map-get(v.$font-weights, medium);
+
+        @include m.media-breakpoint-up(tablet) {
+            font-size: map-get(v.$font-sizes, fs-800);
+        }
+
+        @include m.media-breakpoint-up(desktop) {
+            font-size: map-get(v.$font-sizes, fs-850);
+        }
+    }
+
+    .group-profile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-top: 16px;
+        min-width: fit-content;
+
+        @include m.media-breakpoint-up(tablet) {
+            flex-direction: column;
+            align-self: flex-start;
+            justify-content: flex-end;
+            align-items: flex-end;
+            margin-top: 0;
+        }
+
+        .rating {
+            @include m.media-breakpoint-up(tablet) {
+                order: 2;
+                margin-top: 25px;
+            }
+        }
+    }
+
+    &-description {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        margin-top: 15px;
+
+        @include m.media-breakpoint-up(tablet) {
+            flex-direction: row;
+            justify-content: space-between;
+            column-gap: 50px;
+            margin-top: 30px;
+        }
+
+        @include m.media-breakpoint-up(desktop) {
+            column-gap: 76px;
+        }
+    }
+}

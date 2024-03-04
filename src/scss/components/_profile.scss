@@ -1,0 +1,35 @@
+@use '../utils/variables' as v;
+@use '../utils/mixins' as m;
+
+.profile {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+
+    &-host-name {
+        color: map-get(v.$colors, light-red);
+        font-size: map-get(v.$font-sizes, fs-300);
+        text-align: right;
+
+        @include m.media-breakpoint-up(tablet) {
+            font-size: map-get(v.$font-sizes, fs-500);
+        }
+    }
+
+    &-avatar {
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+
+        @include m.media-breakpoint-up(tablet) {
+            width: 64px;
+            height: 64px;
+        }
+
+        img {
+            border-radius: 50%;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
