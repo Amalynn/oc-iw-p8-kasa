@@ -4,6 +4,7 @@ import Profile from '../components/Profile.jsx';
 import Collapse from '../components/Collapse.jsx';
 import ElementsList from '../components/ElementsList.jsx';
 import Rating from '../components/Rating.jsx';
+import Slideshow from '../components/Slideshow.jsx';
 
 export default function ApartmentDetails() {
     let { id } = useParams();
@@ -11,9 +12,13 @@ export default function ApartmentDetails() {
     let apartmentToDisplay = apartments.find(
         (apartment) => apartment.id === id,
     );
-    //console.log(typeof apartmentToDisplay.equipments);
+
     return (
         <>
+            <Slideshow
+                pictures={apartmentToDisplay.pictures}
+                title={apartmentToDisplay.title}
+            />
             <section className="apartment">
                 <div className="apartment-header">
                     <div className="group-location">

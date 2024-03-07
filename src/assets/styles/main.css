@@ -497,6 +497,118 @@ a {
   }
 }
 
+.slideshow {
+  height: 255px;
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+@media only screen and (min-width: 768px) {
+  .slideshow {
+    height: 415px;
+  }
+}
+.slideshow-img {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+@media only screen and (min-width: 768px) {
+  .slideshow-img {
+    border-radius: 25px;
+  }
+}
+.slideshow-arrow {
+  height: 20px;
+  width: auto;
+}
+@media only screen and (min-width: 768px) {
+  .slideshow-arrow {
+    height: 50px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .slideshow-arrow {
+    height: 79px;
+  }
+}
+.slideshow-arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  position: absolute;
+  top: calc(50% - 15px);
+}
+@media only screen and (min-width: 768px) {
+  .slideshow-arrow-container {
+    top: calc(50% - 25px);
+    padding: 10px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .slideshow-arrow-container {
+    top: calc(50% - 39px);
+  }
+}
+.slideshow-arrow-container:hover {
+  cursor: pointer;
+}
+.slideshow-arrow-container--left {
+  left: 0;
+  margin-left: 6px;
+}
+@media only screen and (min-width: 768px) {
+  .slideshow-arrow-container--left {
+    margin-left: 15px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .slideshow-arrow-container--left {
+    margin-left: 23px;
+  }
+}
+.slideshow-arrow-container--right {
+  right: 0;
+  margin-right: 6px;
+}
+@media only screen and (min-width: 768px) {
+  .slideshow-arrow-container--right {
+    margin-right: 13px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .slideshow-arrow-container--right {
+    margin-right: 23px;
+  }
+}
+.slideshow-index-img {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .slideshow-index-img {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .slideshow-index-img {
+    font-size: 18px;
+  }
+}
+
 .about {
   display: flex;
   flex-direction: column;
