@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import apartments from '../datas/apartments.json';
 import Profile from '../components/Profile.jsx';
 import Collapse from '../components/Collapse.jsx';
@@ -12,6 +12,10 @@ export default function ApartmentDetails() {
     let apartmentToDisplay = apartments.find(
         (apartment) => apartment.id === id,
     );
+
+    if (!apartmentToDisplay) {
+        return <Navigate to="/error404" replace />;
+    }
 
     return (
         <>

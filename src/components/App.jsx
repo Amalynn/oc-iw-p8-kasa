@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Header from './Header.jsx';
 import Footer from './Footer.jsx';
 import Home from '../pages/Home.jsx';
@@ -20,7 +20,11 @@ export default function App() {
                         path="/apartment/:id"
                         element={<ApartmentDetails />}
                     />
-                    <Route path="*" element={<Error404 />} />
+                    <Route path="/error404" element={<Error404 />} />
+                    <Route
+                        path="*"
+                        element={<Navigate to="/error404" replace />}
+                    />
                 </Routes>
             </Layout>
 
