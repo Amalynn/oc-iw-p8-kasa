@@ -1,11 +1,14 @@
 import bannerAbout from '../assets/images/banner-about.jpg';
 import Banner from '../components/Banner.jsx';
 import Collapse from '../components/Collapse.jsx';
+import BrowserTabTitle from '../components/BrowserTabTitle.jsx';
 
 export default function About() {
     const imageTitle = 'Bannière de la page "A propos"';
+
     return (
         <>
+            <BrowserTabTitle tabTitle={'A propos'} />
             <Banner image={bannerAbout} imageTitle={imageTitle} />
 
             <div className="about">

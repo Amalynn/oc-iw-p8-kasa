@@ -5,6 +5,7 @@ import Collapse from '../components/Collapse.jsx';
 import ElementsList from '../components/ElementsList.jsx';
 import Rating from '../components/Rating.jsx';
 import Slideshow from '../components/Slideshow.jsx';
+import BrowserTabTitle from '../components/BrowserTabTitle.jsx';
 
 export default function ApartmentDetails() {
     let { id } = useParams();
@@ -19,6 +20,7 @@ export default function ApartmentDetails() {
 
     return (
         <>
+            <BrowserTabTitle tabTitle={'Fiche descriptive - Appartement'} />
             <Slideshow
                 pictures={apartmentToDisplay.pictures}
                 title={apartmentToDisplay.title}
